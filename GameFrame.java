@@ -1,24 +1,16 @@
-package com.company;
-
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
 import javax.swing.*;
 
 
-
-public class GameFrame extends JFrame{
-    GamePanel panel;
-
+//Taj 011211113
+public class GameFrame extends JFrame {
     GameFrame(){
-     panel = new GamePanel();
-     this.add(panel);
-     this.setTitle("Pong Game");
-     this.setResizable(false);
-     this.setBackground(Color.BLACK);
-     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-     this.pack();
-     this.setVisible(true);
-     this.setLocationRelativeTo(null);
+
+        this.add(new GamePanel());
+        this.setTitle("Snake");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setResizable(false);
+        this.pack();
+        this.setVisible(true);
+        this.setLocationRelativeTo(null);
     }
 }
